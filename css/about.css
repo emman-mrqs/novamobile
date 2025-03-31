@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Anonymous Pro', monospace; /* Set the Anonymous Pro font */
+}
+
+.main-navbar {
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    height: 80px;
+}
+
+.logo2 {
+    height: 120px;
+}
+
+.main-navbar .top-navbar {
+    background-color: #FFC563   ; 
+    padding: 15px 0; 
+}
+
+.main-navbar .top-navbar .brand-name {
+    color: #fff;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.main-navbar .top-navbar .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s; 
+}
+
+.main-navbar .top-navbar .nav-link:hover {
+    color: #000000; 
+}
+
+.main-navbar .top-navbar .dropdown-menu {
+    border-radius: 0px;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item {
+    padding: 10px 15px; 
+    font-size: 14px;
+    color: #000000;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; 
+}
+
+.main-navbar .navbar {
+    background-color: #fff; 
+    padding: 10px 0; 
+}
+
+.main-navbar .navbar .nav-item .nav-link {
+    padding: 8px 15px; 
+    color: #333; 
+    font-size: 15px;
+}
+
+.main-navbar .navbar .nav-item .nav-link.active {
+    font-weight: bold; 
+    color: #000000; 
+}
+
+
+.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border-radius: 30px;  /* Rounded corners */
+    padding: 10px 20px; /* More padding for a larger button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+}
+
+
+
+.coupon {
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.coupon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.coupon i {
+    font-size: 3rem;
+}
+
+.coupon .code {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.coupon p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.badge {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+}
+
+.text-primary, .text-danger, .text-success {
+    font-weight: 600;
+}
+
+/* General body and text styling */
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #f8f9fa; /* Light gray background for better contrast */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+
+.nav-item.active .nav-link {
+    font-weight: bold; /* Makes the active link bold */
+    background-color:  #FFC563 ; /* Change background color if needed */
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-navbar .top-navbar .nav-link {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+/* Container for each feature box */
+/* Container for each feature box */
+/* Container for each feature box */
+.feature {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+/* Gear icon styles */
+.feature .feature-box .iconset {
+    background: #fdb801; /* Adjusted color for a more cohesive look */
+    float: left;
+    position: relative;
+    width: 18%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Rounded gear icon */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+.feature .feature-box .iconset i {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Roadmap line connecting each gear */
+.feature .feature-box .iconset::after {
+    background: #fdb801;
+    content: "";
+    height: 250%;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    width: 2px;
+    transform: translateX(-50%);
+}
+
+/* Remove the roadmap line for Customer Support */
+.feature .feature-box:last-child .iconset::after {
+    display: none;
+}
+
+
+/* Feature title */
+.feature .feature-box .feature-content h4 {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0 0 8px;
+}
+
+/* Feature description */
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Feature content layout */
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 20px;
+    width: 78%;
+}
+
+/* Spacing between feature boxes */
+.feature .feature-box {
+    margin-bottom: 40px;
+}
+
+
+
+
+.icon {
+    color : #f4b841;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+
+

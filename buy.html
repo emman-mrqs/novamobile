@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Mobile Phone | Buy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="./css/buy.css">
+
+</head>
+<body>
+    <!-- This is navbar -->
+    <div class="main-navbar shadow-sm sticky-top">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                        <img class="brand-name logo" src="../img/logo/logo.png" alt="">
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <form role="search">
+                            <div class="input-group">
+                                <input type="search" placeholder="Search your product" class="form-control" />
+                                <button class="btn bg-white" type="submit">
+                                    <!-- Bootstrap search icon -->
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html">
+                                    <!-- Bootstrap cart icon -->
+                                    <i class="bi bi-cart"></i> Cart (0)
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Bootstrap user icon -->
+                                    <i class="bi bi-person"></i> Username 
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-list"></i> My Orders</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-cart"></i> My Cart</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item ">
+                          <a class="nav-link " href="./user.html">Home</a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="./voucher.html">Products</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+<!-- This is Buying Page -->
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image-container" id="imageContainer">
+                <img src="../img/Buy Page/Iphone/Iphone 16 Pro Max (Front View).png" class="active img-fluid" alt="Front View" data-angle="0">
+                <img src="../img/Buy Page/Iphone/Iphone 16 Pro Max (Side View).png" class="img-fluid" alt="Side View" data-angle="1">
+                <img src="../img/Buy Page/Iphone/Iphone 16 Pro Max (Camera View).png" class="img-fluid" alt="Camera View" data-angle="2">
+                <img src="../img/Buy Page/Iphone/Iphone 16 Pro Max (Other View).png" class="img-fluid" alt="Other view" data-angle="3">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-2">iPhone 16 Pro Max</h2> <!-- Reduced margin-bottom -->
+            <p class="fs-5">₱84,990</p>
+            <div class="mb-3">
+                <label for="color" class="form-label">Color</label>
+                <select class="form-select custom-dropdown" id="color">
+                    <option>Desert Titanium</option>
+                    <option>Natural Titanium</option>
+                    <option>White Titanium</option>
+                    <option>Black Titanium</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="storage" class="form-label">Storage</label>
+                <select class="form-select custom-dropdown" id="storage">
+                    <option>256GB</option>
+                    <option>512GB</option>
+                    <option>1TB</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Tab Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">Specifications</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (0)</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <p> The iPhone 16 Pro Max continues Apple's tradition of blending powerful technology with sleek design. As the flagship model in the lineup, the iPhone 16 Pro Max boasts premium build quality, using aerospace-grade materials for durability and elegance. It features a refined, edge-to-edge display with minimal bezels and a dynamic refresh rate for seamless interaction. This model is designed for users seeking top-tier performance, photography, and immersive experiences.</p>
+                </div>
+                <div class="tab-pane fade" id="specifications" role="tabpanel" aria-labelledby="specifications-tab">
+                    <p>Display:
+
+                        6.9-inch Super Retina XDR OLED display
+                        Resolution: 3200 x 1440 pixels
+                        Refresh rate: 1 Hz to 120 Hz adaptive ProMotion technology
+                        HDR10 and Dolby Vision support
+                        Peak brightness: 2,500 nits (outdoor)
+                        Processor:
+                        
+                        Apple A18 Bionic chip with 4nm architecture
+                        Neural Engine: 18-core for advanced AI and machine learning tasks
+                        Camera System:
+                        
+                        Triple rear camera setup:
+                        48 MP main sensor with f/1.5 aperture, sensor-shift stabilization
+                        12 MP ultra-wide lens with f/1.8 aperture and 120-degree field of view
+                        12 MP telephoto lens with up to 10x optical zoom
+                        Front camera: 16 MP TrueDepth with autofocus and enhanced low-light capabilities
+                        Advanced computational photography: Smart HDR 6, Photonic Engine, Night mode
+                        8K video recording at 30 fps, ProRes support
+                        Storage Options:
+                        
+                        256 GB, 512 GB, 1 TB, 2 TB</p>
+                </div>
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <p>No reviews yet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <h2 class="mb-3">Related Products</h2>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card m-2" style="width: 18rem;">
+                            <img src="../img/products/Xiaomi 13 Ultra 5G.png" class="card-img-top" alt="Xiaomi 13 Ultra 5G">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Xiaomi 13 Ultra 5G</b></h5>
+                                <p class="card-text">₱43,515.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            <a href="#" class="stretched-link" style="text-decoration: none; color: inherit;"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card m-2" style="width: 18rem;">
+                            <img src="../img/products/Xiaomi 13t pro.png" class="card-img-top" alt="Xiaomi 13T Pro">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Xiaomi 13T Pro</b></h5>
+                                <p class="card-text">₱37,999.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            <a href="#" class="stretched-link" style="text-decoration: none; color: inherit;"></a>
+                        </div>
+                    </div>
+                        
+                    <div class="col-lg-3 col-md-6 mb-4">    
+                        <div class="card m-2" style="width: 18rem;">
+                            <img src="../img/products/Iphone 14.png" class="card-img-top" alt="Iphone 14">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Iphone 14</b></h5>
+                                <p class="card-text">₱57,049.00</p>
+                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                            </div>
+                            <a href="#" class="stretched-link" style="text-decoration: none; color: inherit;"></a>
+                        </div>
+                    </div>
+                
+                    
+                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card m-2" style="width: 18rem;">
+                        <img src="../img/products/IPHONE 13 PRO MAX.png" class="card-img-top" alt="Iphone 13 Pro Max">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Iphone 13 Pro Max</b></h5>
+                            <p class="card-text">₱60,049.00</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                        <a href="#" class="stretched-link" style="text-decoration: none; color: inherit;"></a>
+                    </div>
+                </div>
+
+                <!-- Add more related products here if needed -->
+            </div>
+        </div>
+
+
+        
+
+
+
+<!--This is Footer -->
+<div class="container-fluid">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+       
+      </div>
+  
+      <div class="col mb-3">
+        <img class="logo2 " src="../img/logo/logo2.png" alt="logo2">
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        
+        <h5> Section</h5>
+      
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./js/buy.js"></script>
+</body>
+</html>

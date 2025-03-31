@@ -1,0 +1,79 @@
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.95); /* White with slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Change color and scale on hover */
+a.text-body {
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.1s ease; /* Smooth transition */
+}
+
+a.text-body i {
+    color: inherit; /* Inherit color from the parent link */
+    transition: color 0.3s ease, transform 0.1s ease; /* Smooth transition */
+}
+
+a.text-body:hover i {
+    color: #007bff; /* Change this color to your preferred hover color */
+    transform: scale(1.1); /* Slightly scale up the icon */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border-radius: 30px;  /* Rounded corners */
+    padding: 10px 20px; /* More padding for a larger button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+}
+
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid rgba(206, 212, 218, 0.8); /* Light gray border */
+}
+
+.card-body img {
+    max-width: 80px;
+    border-radius: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.custom-trash:hover {
+    color: red !important;
+}

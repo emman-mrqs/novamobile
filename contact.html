@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Mobile Phone Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="./css/contact.css">
+
+</head>
+<body>
+    <!-- This is navbar -->
+    <div class="main-navbar shadow-sm sticky-top">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                        <img class="brand-name logo" src="../img/logo/logo.png" alt="">
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <form role="search">
+                            <div class="input-group">
+                                <input type="search" placeholder="Search your product" class="form-control" />
+                                <button class="btn bg-white" type="submit">
+                                    <!-- Bootstrap search icon -->
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 my-auto">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html">
+                                    <!-- Bootstrap cart icon -->
+                                    <i class="bi bi-cart"></i> Cart (0)
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Bootstrap user icon -->
+                                    <i class="bi bi-person"></i> Username 
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> Profile</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-list"></i> My Orders</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-cart"></i> My Cart</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item ">
+                          <a class="nav-link " href="./user.html">Home</a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="./voucher.html">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+<!-- This is Contact Page -->
+<div class="page-area contact-page">
+    <div class="container spad">
+        <div class="text-center">
+            <h4 class="contact-title">Get in Touch</h4>
+        </div>
+        <form class="contact-form">
+            <div class="row">
+                <div class="col-md-6 col-12 mb-3">
+                    <input type="text" class="form-control" placeholder="First Name *"> 
+                </div>
+                <div class="col-md-6 col-12 mb-3">
+                    <input type="text" class="form-control" placeholder="Last Name *"> 
+                </div>
+                <div class="col-12 mb-3">
+                    <input type="text" class="form-control" placeholder="Subject">
+                </div>
+                <div class="col-12 mb-3">
+                    <textarea class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="site-btn">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="container contact-info-warp">
+        <div class="row">
+            <div class="col-md-4 col-12 mb-4">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h4>Shipping & Returns</h4>
+                        <p>Phone: +63 911 201 2453</p>
+                        <p>Email: NovaMobile@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 mb-4">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h4>Informations</h4>
+                        <p>Phone: +63 995 795 2453</p>
+                        <p>Email: NovaMobile@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-area">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.1887639184943!2d121.09583615051163!3d14.633745453150551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b83494651ef7%3A0x24907f2f35e6d169!2s294%20Shoe%20Ave%2C%20Marikina%2C%201800%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1701056803187!5m2!1sen!2sph" 
+        width="100%" height="670" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0;" 
+        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+
+
+
+
+<!--This is Footer -->
+<div class="container-fluid">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+       
+      </div>
+  
+      <div class="col mb-3">
+        <img class="logo2 " src="../img/logo/logo2.png" alt="logo2">
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        
+        <h5> Section</h5>
+      
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src=""></script>
+</body>
+</html>

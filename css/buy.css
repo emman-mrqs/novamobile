@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.main-navbar {
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    height: 80px;
+}
+
+.logo2 {
+    height: 120px;
+}
+
+.main-navbar .top-navbar {
+    background-color: #FFC563   ; 
+    padding: 15px 0; 
+}
+
+.main-navbar .top-navbar .brand-name {
+    color: #fff;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.main-navbar .top-navbar .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s; 
+}
+
+.main-navbar .top-navbar .nav-link:hover {
+    color: #000000; 
+}
+
+.main-navbar .top-navbar .dropdown-menu {
+    border-radius: 0px;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item {
+    padding: 10px 15px; 
+    font-size: 14px;
+    color: #000000;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; 
+}
+
+.main-navbar .navbar {
+    background-color: #fff; 
+    padding: 10px 0; 
+}
+
+.main-navbar .navbar .nav-item .nav-link {
+    padding: 8px 15px; 
+    color: #333; 
+    font-size: 15px;
+}
+
+.main-navbar .navbar .nav-item .nav-link.active {
+    font-weight: bold; 
+    color: #000000; 
+}
+
+
+.carousel-height {
+    height: 50vh; /* Set to half of the viewport height */
+}
+
+.carousel-item {
+    height: 50vh; /* Set each carousel item to match the height */
+}
+
+.carousel-item img {
+    height: 100%; /* Make the image take full height */
+    object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
+}
+
+
+
+.carousel-item {
+    background-color: black; /* or any dark color of your choice */
+    position: relative; /* Ensure the item position is relative for any overlays */
+}
+
+.carousel-item img {
+    filter: brightness(0.5); /* Optionally, apply a dark filter to the images for contrast */
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace; /* Set the Anonymous Pro font */
+}
+
+
+
+
+.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border-radius: 30px;  /* Rounded corners */
+    padding: 10px 20px; /* More padding for a larger button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+}
+
+
+
+.card {
+    transition: transform 0.2s; /* Smooth scale effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+h2 {
+    margin-bottom: 2rem; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    font-weight: 600; /* Medium bold for better emphasis */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+
+
+.nav-item.active .nav-link {
+    font-weight: bold; /* Makes the active link bold */
+    background-color:  #FFC563 ; /* Change background color if needed */
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-navbar .top-navbar .nav-link {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+
+
+
+.image-container {
+    position: relative;
+    height: 600px; /* Set a fixed height for the image container */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 20px;
+}
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Start with images hidden */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+.image-container img.active {
+    opacity: 1; /* Show only the active image */
+}
+
+
+.custom-dropdown {
+    width: 50%; /* Set the dropdown width to 50% */
+}
+
+

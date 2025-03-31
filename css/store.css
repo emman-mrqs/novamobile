@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Anonymous Pro', monospace; /* Set the Anonymous Pro font */
+}
+
+.main-navbar {
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    height: 80px;
+}
+
+.logo2 {
+    height: 120px;
+}
+
+.main-navbar .top-navbar {
+    background-color: #FFC563; 
+    padding: 15px 0; 
+}
+
+.main-navbar .top-navbar .brand-name {
+    color: #fff;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}
+
+.main-navbar .top-navbar .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s; 
+}
+
+.main-navbar .top-navbar .nav-link:hover {
+    color: #000000; 
+}
+
+.main-navbar .top-navbar .dropdown-menu {
+    border-radius: 0px;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item {
+    padding: 10px 15px; 
+    font-size: 14px;
+    color: #000000;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; 
+}
+
+.main-navbar .navbar {
+    background-color: #fff; 
+    padding: 10px 0; 
+}
+
+.main-navbar .navbar .nav-item .nav-link {
+    padding: 8px 15px; 
+    color: #333; 
+    font-size: 15px;
+}
+
+.main-navbar .navbar .nav-item .nav-link.active {
+    font-weight: bold; 
+    color: #000000; 
+}
+
+
+.carousel-height {
+    height: 50vh; /* Set to half of the viewport height */
+}
+
+.carousel-item {
+    height: 50vh; /* Set each carousel item to match the height */
+}
+
+.carousel-item img {
+    height: 100%; /* Make the image take full height */
+    object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
+}
+
+
+
+.carousel-item {
+    background-color: black; /* or any dark color of your choice */
+    position: relative; /* Ensure the item position is relative for any overlays */
+}
+
+.carousel-item img {
+    filter: brightness(0.5); /* Optionally, apply a dark filter to the images for contrast */
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: 700; /* Bold */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; /* Adjust font size */
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    margin-bottom: 1.5rem; /* Spacing between elements */
+}
+
+.btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border-radius: 30px;  /* Rounded corners */
+    padding: 10px 20px; /* More padding for a larger button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow effect */
+}
+
+
+.list-box {
+    background-color: #f8f9fa;  /* Light background for a subtle effect */
+    border-radius: 0.5rem;        /* Rounded corners */
+    padding: 20px;                /* Padding around content */
+    transition: transform 0.3s, box-shadow 0.3s;  /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Shadow for depth */
+}
+
+.list-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+.list-icon {
+    font-size: 2rem; /* Increase icon size */
+    color: #007bff; /* Bootstrap primary color */
+    margin-right: 15px; /* Space between icon and text */
+}
+
+.content h3 {
+    margin: 0; /* Remove default margin */
+    font-weight: 600; /* Medium bold for titles */
+}
+
+.product-section {
+    margin: 3rem 0; /* Space above and below the section */
+}
+
+.card {
+    transition: transform 0.2s; /* Smooth scale effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+h2 {
+    margin-bottom: 2rem; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    font-weight: 600; /* Medium bold for better emphasis */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.nav-item.active .nav-link {
+    font-weight: bold; /* Makes the active link bold */
+    background-color:  #FFC563 ; /* Change background color if needed */
+    border-radius: 5px; /* Adds rounded corners */
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main-navbar .top-navbar .nav-link {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
